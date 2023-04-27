@@ -5,93 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entities</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="weight-monitor">
-        <header class="weight-monitor__header">
+      <!-- <div class="page">
+        <header class="page__header">
+          <img class="page__header_menu" src="./img/header_menu.svg" />
+          <div>
+            <h1 class="page__header_header">Weight Monitor</h1>
+          </div>
+          <img class="page__header_plus" src="./img/header_plus.svg" />
+        </header>
+        <div class="page__content">
+          <div class="page__content_card">
+            <img class="page__content_card_cat" src="./img/cat-polimorf.svg" />
+            <p class="page__content_card_text">
+              Polimorf <br />
+              <span class="page__content_card_text_number">3,5 KG</span
+              ><img
+                class="page__content_card_text_arrow"
+                src="./img/arrow-up.svg"
+              />
+            </p>
+            <div class="page__content_card_block">
+              <img class="page__content_card_block_note" src="./img/note.svg" />
+              <p class="page__content_card_block_date">08.04.2022</p>
+            </div>
+          </div>
+          <div class="page__content_card">
+            <img class="page__content_card_cat" src="./img/cat-pulheria.svg" />
+            <p class="page__content_card_text">
+              Pulheria <br />
+              <span class="page__content_card_text_number">3,5 KG</span
+              ><img
+                class="page__content_card_text_arrow"
+                src="./img/arrow-down.svg"
+              />
+            </p>
+            <div class="page__content_card_block">
+              <img class="page__content_card_block_note" src="./img/note.svg" />
+              <p class="page__content_card_block_date">08.04.2022</p>
+            </div>
+          </div>
+          <div class="page__content_card">
+            <img class="page__content_card_cat" src="./img/cat-apofem.svg" />
+            <p class="page__content_card_text">
+              Apofem <br />
+              <span class="page__content_card_text_number">3,5 KG</span
+              ><img
+                class="page__content_card_text_arrow"
+                src="./img/arrow-down.svg"
+              />
+            </p>
+            <div class="page__content_card_right-block">
+              <img class="page__content_card_right-block_note" src="./img/note.svg" />
+              <p class="page__content_card_right-block_date">08.04.2022</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="page">
+        <header class="page__header">
+          <img class="page__header_menu" src="./img/header_menu.svg" />
+          <img class="page__header_cat" src="./img/cat-polimorf.svg" />
+          <div>
+            <h1 class="page__header_header">Polimorf</h1>
+          </div>
+          <img class="page__header_note" src="./img/note.svg" />
+        </header>
+        <div class="page__content">
+          <table class="page__content_table">
+            <tr>
+                <td>Weight:</td>
+                <td class="page__content_table_data" >3,5 kg <img src="./img/arrow-up.svg"/></td>
+            </tr>
+            <tr>
+                <td>Birthday:</td>
+                <td class="page__content_table_data" >08.04.2000</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td class="page__content_table_data" >2</td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td class="page__content_table_data" >Female</td>
+            </tr>
+        </table>
+
+        </div>
+      </div> -->
+      <!-- <div class="page">
+        <header class="page__header">
+          <img class="page__header_menu" src="./img/arrow-left.svg" />
+          <div>
+            <h1 class="page__header_header">Create</h1>
+          </div>
           <img
-            class="weight-monitor__header-menu"
-            src="./img/header_menu.svg"
-            alt="menu"
-          />
-          <h1 class="weight-monitor__header-text">Weight Monitor</h1>
-          <img
-            class="weight-monitor__header-plus"
+            style="opacity: 0"
+            class="page__header_plus"
             src="./img/header_plus.svg"
-            alt="plus"
           />
         </header>
-        <div class="weight-monitor__content">
-          <div class="weight-monitor__content-card">
-            <img
-              class="weight-monitor__content-card-img"
-              src="./img/cat-polimorf.svg"
-              alt="cat-polimorf"
-            />
-            <div class="weight-monitor__content-card-name">
-              <p>
-                Polimorf <br />
-                <span class="weight-monitor__content-card-name-number"
-                  >3,5 KG</span
-                >
-                <img class="weight-monitor__content-card-name-arrow" src="./img/arrow-up.svg" alt="arrow-up" />
-              </p>
+        <div class="page__content">
+          <div class="page__content_create">
+            <div class="page__content_create_form">
+              <p class="page__content_create_form_title">Name</p>
             </div>
-            <div>
-              <img class="weight-monitor__content-card-note" src="./img/note.svg" />
-              <p class="weight-monitor__content-card-date">08.04.2022</p>
+            <div class="page__content_create_form">
+              <p class="page__content_create_form_title">Species</p>
+              <img class="page__content_create_form_species" src="./img/triangle.svg" />
+            </div>
+            <div class="page__content_create_form">
+              <p class="page__content_create_form_title">Birthday</p>
+              <img class="page__content_create_form_date" src="./img/icon_date.svg"/>
             </div>
           </div>
-          <div class="weight-monitor__content-card">
-            <img
-              class="weight-monitor__content-card-img"
-              src="./img/cat-pulheria.svg"
-              alt="cat-polimorf"
-            />
-            <div class="weight-monitor__content-card-name">
-              <p>
-                Pulheria <br />
-                <span class="weight-monitor__content-card-name-number"
-                  >3,5 KG</span
-                >
-                <img class="weight-monitor__content-card-name-arrow" src="./img/arrow-down.svg" alt="arrow-up" />
-              </p>
-            </div>
-            <div>
-              <img  style="opacity: 0;" class="weight-monitor__content-card-note" src="./img/note.svg" />
-              <p class="weight-monitor__content-card-date">08.04.2022</p>
-            </div>
+        </div>
+      </div> -->
+      <div class="page">
+        <header class="page__header">
+          <img class="page__header_menu" src="./img/header_menu.svg" />
+          <div>
+            <h1 class="page__header_header">History</h1>
           </div>
-          <div class="weight-monitor__content-card">
-            <img
-              class="weight-monitor__content-card-img"
-              src="./img/cat-apofem.svg"
-              alt="cat-polimorf"
-            />
-            <div class="weight-monitor__content-card-name">
-              <p>
-                Apofem <br />
-                <span class="weight-monitor__content-card-name-number"
-                  >3,5 KG</span
-                >
-                <img class="weight-monitor__content-card-name-arrow" src="./img/arrow-down.svg" alt="arrow-up" />
+          <img class="page__header_plus" src="./img/header_plus.svg" />
+        </header>
+        <div class="page__content">
+          <div class="page__content_history">
+            <div class="page__content_history_item">
+              <p class="page__content_history_item_date">08.04.2022</p>
+              <p class="page__content_history_item_number">
+                3,5 KG <img src="./img/arrow-down.svg" />
               </p>
+              <img
+                class="page__content_history_item_cart"
+                src="./img/Icon_cart.svg"
+              />
             </div>
-            <div>
-              <img style="opacity: 0;" class="weight-monitor__content-card-note" src="./img/note.svg" />
-              <p class="weight-monitor__content-card-date">08.04.2022</p>
+            <div class="page__content_history_item">
+              <p class="page__content_history_item_date">08.04.2022</p>
+              <p class="page__content_history_item_number">
+                3,5 KG <img src="./img/arrow-down.svg" />
+              </p>
+              <img
+                class="page__content_history_item_cart"
+                src="./img/Icon_cart.svg"
+              />
+            </div>
+            <div class="page__content_history_item">
+              <p class="page__content_history_item_date">08.04.2022</p>
+              <p class="page__content_history_item_number">
+                3,5 KG <img src="./img/arrow-down.svg" />
+              </p>
+              <img
+                class="page__content_history_item_cart"
+                src="./img/Icon_cart.svg"
+              />
             </div>
           </div>
         </div>

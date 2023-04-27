@@ -1,88 +1,171 @@
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.weight-monitor {
+.wrapper .page {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 428px;
   height: 762px;
-  background: #f4e8de;
+  background-color: #f4e8de;
 }
-.weight-monitor .weight-monitor__header {
-  margin-bottom: 24px;
-  display: flex;
-  justify-content: space-between;
+.wrapper .page .page__header {
+  width: 100%;
   height: 56px;
   background: #a77c5d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
-.weight-monitor .weight-monitor__header .weight-monitor__header-menu {
+.wrapper .page .page__header .page__header_menu {
   color: #332317;
   width: 15.5px;
-  height: 11.5px;
-  padding-top: 22.25px;
-  padding-left: 16.25px;
+  padding-left: 16.5px;
 }
-.weight-monitor .weight-monitor__header .weight-monitor__header-text {
+.wrapper .page .page__header .page__header_cat {
+  width: 36px;
+}
+.wrapper .page .page__header .page__header_header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  line-height: 28px;
   color: #332317;
-  padding-right: 180px;
+  padding-right: 160px;
 }
-.weight-monitor .weight-monitor__header .weight-monitor__header-plus {
-  color: #332317;
+.wrapper .page .page__header .page__header_plus {
   width: 18px;
-  height: 18px;
-  padding-top: 19px;
   padding-right: 19px;
 }
-.weight-monitor .weight-monitor__content .weight-monitor__content-card {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
+.wrapper .page .page__header .page__header_note {
+  width: 17.5px;
+  padding-right: 19.5px;
+}
+.wrapper .page .page__content .page__content_card {
   width: 404px;
   height: 108px;
   border: 1px solid #a77c5d;
   box-shadow: 0px 4px 4px #c4c4c4;
   border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
 }
-.weight-monitor .weight-monitor__content .weight-monitor__content-card .weight-monitor__content-card-img {
-  width: 60px;
+.wrapper .page .page__content .page__content_card .page__content_card_cat {
   height: 60px;
+  width: 60px;
   padding-top: 24px;
   padding-left: 24px;
 }
-.weight-monitor .weight-monitor__content .weight-monitor__content-card .weight-monitor__content-card-name {
+.wrapper .page .page__content .page__content_card .page__content_card_text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  line-height: 28px;
   color: #332317;
-  padding-right: 90px;
+  padding-right: 100px;
 }
-.weight-monitor .weight-monitor__content .weight-monitor__content-card .weight-monitor__content-card-name .weight-monitor__content-card-name-number {
-  color: #000000;
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_text_number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
 }
-.weight-monitor .weight-monitor__content .weight-monitor__content-card .weight-monitor__content-card-note {
-  color: #332317;
-  padding-left: 31px;
-  padding-top: 15.5px;
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_text_arrow {
+  padding-left: 7px;
+  height: 12px;
 }
-.weight-monitor .weight-monitor__content .weight-monitor__content-card .weight-monitor__content-card-date {
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_ {
+  width: 30px;
+  background-color: #000000;
+}
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_ .page__content_card__note {
+  padding-top: 20px;
+  color: #332317;
+}
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_ .page__content_card__date {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  line-height: 14px;
   color: #000000;
-  padding-right: 12px;
-  padding-top: 25px;
+}
+.wrapper .page .page__content .page__content_table {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #332317;
+}
+.wrapper .page .page__content .page__content_table td {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.wrapper .page .page__content .page__content_table .page__content_table_data {
+  font-size: 16px;
+}
+.wrapper .page .page__content .page__content_create {
+  display: flex;
+  flex-flow: column wrap;
+}
+.wrapper .page .page__content .page__content_create .page__content_create_form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 404px;
+  height: 48px;
+  border: 1px solid #a77c5d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .page .page__content .page__content_create .page__content_create_form .page__content_create_form_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #332317;
+  opacity: 0.8;
+  padding-left: 16px;
+}
+.wrapper .page .page__content .page__content_create .page__content_create_form .page__content_create_form_species {
+  padding-top: 8px;
+  padding-right: 8px;
+  width: 42px;
+  height: 38px;
+}
+.wrapper .page .page__content .page__content_create .page__content_create_form .page__content_create_form_date {
+  color: #a77c5d;
+  padding-right: 15px;
+}
+.wrapper .page .page__content .page__content_history .page__content_history_item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 404px;
+  height: 48px;
+  border-bottom: 1px solid #a77c5d;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #332317;
+}
+.wrapper .page .page__content .page__content_history .page__content_history_item .page__content_history_item_date {
+  padding-left: 8px;
+}
+.wrapper .page .page__content .page__content_history .page__content_history_item .page__content_history_item_number {
+  padding-right: 40px;
+}
+.wrapper .page .page__content .page__content_history .page__content_history_item .page__content_history_item_cart {
+  width: 16px;
+  padding-right: 8px;
 }
