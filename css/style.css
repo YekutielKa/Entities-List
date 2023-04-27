@@ -79,21 +79,20 @@
   padding-left: 7px;
   height: 12px;
 }
-.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_ {
-  width: 30px;
-  background-color: #000000;
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_block {
+  opacity: 0;
+  background-color: black;
 }
-.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_ .page__content_card__note {
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_block .page__content_card_block__note {
   padding-top: 20px;
   color: #332317;
 }
-.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_ .page__content_card__date {
+.wrapper .page .page__content .page__content_card .page__content_card_text .page__content_card_block .page__content_card_block__date {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #000000;
 }
 .wrapper .page .page__content .page__content_table {
   font-family: "Roboto";

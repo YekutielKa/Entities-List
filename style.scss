@@ -82,20 +82,19 @@ $colorBackground: #f4e8de;
             padding-left: 7px;
             height: 12px;
           }
-          .page__content_card_ {
-            width: 30px;
-            background-color: #000000;
-            .page__content_card__note {
+          .page__content_card_block {
+            opacity: 0;
+            background-color: black;
+            .page__content_card_block__note {
               padding-top: 20px;
               color: $colorText;
             }
-            .page__content_card__date {
+            .page__content_card_block__date {
               font-family: "Roboto";
               font-style: normal;
               font-weight: 400;
               font-size: 12px;
               line-height: 14px;
-              color: #000000;
             }
           }
         }
