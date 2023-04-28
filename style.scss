@@ -2,179 +2,187 @@ $colorHeader: #a77c5d;
 $colorText: #332317;
 $colorBackground: #f4e8de;
 
-.wrapper {
-  .page {
-    margin-top: 20px;
+.page {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 428px;
+  height: 762px;
+  background-color: $colorBackground;
+}
+
+.page__header {
+  width: 100%;
+  height: 56px;
+  background: #a77c5d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  &_menu {
+    color: $colorText;
+    width: 15.5px;
+    padding-left: 16.5px;
+  }
+  &_cat {
+    width: 36px;
+  }
+  &_header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #332317;
+    padding-right: 160px;
+  }
+  &_plus {
+    width: 18px;
+    padding-right: 19px;
+  }
+  &_note {
+    width: 17.5px;
+    padding-right: 19.5px;
+  }
+}
+.polimorf {
+  padding-right: 180px;
+}
+
+.create {
+  padding-right: 260px;
+}
+
+.history {
+  padding-right: 250px;
+}
+
+.page__content_card {
+  width: 404px;
+  height: 108px;
+  border: 1px solid #a77c5d;
+  box-shadow: 0px 4px 4px #c4c4c4;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  &_cat {
+    height: 60px;
+    width: 60px;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+  &_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $colorText;
+    padding-right: 100px;
+    &_number {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+    }
+    &_arrow {
+      padding-left: 7px;
+      height: 12px;
+    }
+  }
+}
+
+.page__content_card_block {
+  margin-right: 10px;
+  margin-top: 10px;
+  &_note {
+    padding-left: 45px;
+  }
+  &_date {
+    padding-top: 25px;
+  }
+}
+
+.page__content_table {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $colorText;
+  td {
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  .page__content_table_data {
+    font-size: 16px;
+  }
+}
+
+.page__content_create {
+  display: flex;
+  flex-flow: column wrap;
+  .page__content_create_form {
     margin-left: auto;
     margin-right: auto;
-    width: 428px;
-    height: 762px;
-    background-color: $colorBackground;
-    .page__header {
-      width: 100%;
-      height: 56px;
-      background: #a77c5d;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 24px;
-      .page__header_menu {
-        color: $colorText;
-        width: 15.5px;
-        padding-left: 16.5px;
-      }
-      .page__header_cat {
-        width: 36px;
-      }
-      .page__header_header {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        color: #332317;
-        padding-right: 160px;
-      }
-      .page__header_plus {
-        width: 18px;
-        padding-right: 19px;
-      }
-      .page__header_note {
-        width: 17.5px;
-        padding-right: 19.5px;
-      }
+    margin-bottom: 40px;
+    width: 404px;
+    height: 48px;
+    border: 1px solid $colorHeader;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    .page__content_create_form_title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: $colorText;
+      opacity: 0.8;
+      padding-left: 16px;
     }
-    .page__content {
-      .page__content_card {
-        width: 404px;
-        height: 108px;
-        border: 1px solid #a77c5d;
-        box-shadow: 0px 4px 4px #c4c4c4;
-        border-radius: 12px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 16px;
-        display: flex;
-        justify-content: space-between;
-        .page__content_card_cat {
-          height: 60px;
-          width: 60px;
-          padding-top: 24px;
-          padding-left: 24px;
-        }
-        .page__content_card_text {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 28px;
-          color: $colorText;
-          padding-right: 100px;
-          .page__content_card_text_number {
-            font-family: "Roboto";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #000000;
-          }
-          .page__content_card_text_arrow {
-            padding-left: 7px;
-            height: 12px;
-          }
-          .page__content_card_block {
-            opacity: 0;
-            background-color: black;
-            .page__content_card_block__note {
-              padding-top: 20px;
-              color: $colorText;
-            }
-            .page__content_card_block__date {
-              font-family: "Roboto";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 12px;
-              line-height: 14px;
-            }
-          }
-        }
-      }
-      .page__content_table {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        color: $colorText;
-        td {
-          padding-bottom: 10px;
-          padding-left: 20px;
-        }
-        .page__content_table_data {
-          font-size: 16px;
-        }
-      }
-      .page__content_create {
-        display: flex;
-        flex-flow: column wrap;
-        .page__content_create_form {
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 40px;
-          width: 404px;
-          height: 48px;
-          border: 1px solid $colorHeader;
-          border-radius: 8px;
-          display: flex;
-          justify-content: space-between;
-          .page__content_create_form_title {
-            font-family: "Roboto";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: $colorText;
-            opacity: 0.8;
-            padding-left: 16px;
-          }
-          .page__content_create_form_species {
-            padding-top: 8px;
-            padding-right: 8px;
-            width: 42px;
-            height: 38px;
-          }
-          .page__content_create_form_date {
-            color: $colorHeader;
-            padding-right: 15px;
-          }
-        }
-      }
-      .page__content_history {
-        .page__content_history_item {
-          margin-left: auto;
-          margin-right: auto;
-          width: 404px;
-          height: 48px;
-          border-bottom: 1px solid #a77c5d;
-          display: flex;
-          justify-content: space-between;
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          color: $colorText;
-          .page__content_history_item_date {
-            padding-left: 8px;
-          }
-          .page__content_history_item_number {
-            padding-right: 40px;
-          }
-          .page__content_history_item_cart {
-            width: 16px;
-            padding-right: 8px;
-          }
-        }
-      }
+    .page__content_create_form_species {
+      padding-top: 8px;
+      padding-right: 4px;
+      width: 42px;
+      height: 38px;
+    }
+    .page__content_create_form_date {
+      color: $colorHeader;
+      padding-right: 15px;
+    }
+  }
+}
+
+.page__content_history {
+  .page__content_history_item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 404px;
+    height: 48px;
+    border-bottom: 1px solid #a77c5d;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorText;
+    .page__content_history_item_date {
+      padding-left: 8px;
+    }
+    .page__content_history_item_number {
+      padding-right: 40px;
+    }
+    .page__content_history_item_cart {
+      width: 16px;
+      padding-right: 8px;
     }
   }
 }
